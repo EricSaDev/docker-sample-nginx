@@ -5,5 +5,4 @@ COPY index.html /usr/share/nginx/html/
 
 USER 1001
 
-RUN chgrp -R 0 /etc && \
-    chmod -R g=u /etc
+RUN chgrp -R 0 /etc/nginx/ && chmod -R g=u /etc/nginx/
