@@ -5,4 +5,5 @@ COPY index.html /usr/share/nginx/html/
 
 USER 1001
 
-RUN chown -R 1001:0 /etc
+RUN chgrp -R 0 /etc && \
+    chmod -R g=u /etc
